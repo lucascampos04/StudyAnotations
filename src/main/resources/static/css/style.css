@@ -1,0 +1,23 @@
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    justify-content: center;
+}
+
+#btn-success, #btn-primary{
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+}
+
+#name-bussines{
+    font-size: 46px;
+    margin-left: 20%;
+    font-family: Roboto;
+    font-weight: bold;
+}

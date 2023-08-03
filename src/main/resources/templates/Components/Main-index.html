@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <title>Lucas Learning</title>
+    <meta name="author" content="Lucas Oliveira">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://Kit.fontawesome.com/006642858d.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<main th:fragment="main-index">
+    <div class="container">
+        <h1>Suas anotações</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card my-2">
+                    <div class="card-body">
+                        <input type="text" class="form-control note-input text-center font-weight-bold" placeholder="Ex: Titulo" style="width: 100%; border: none">
+                        <button class="btn btn-success btn-add-inputs">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <br>
+                        <br>
+                        <div class="note-inputs">
+                            <input type="text" class="form-control note-input" placeholder="Anotação 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/js/GeneraterCard.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
