@@ -12,16 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <body>
 <main th:fragment="main-index">
     <h1 class="m-5 font-weight-bold">Suas anotações</h1>
     <div class="container">
         <div class="row" id="cards-container">
-            <!-- O primeiro card é colocado aqui manualmente -->
-            <div class="col-md-4">
-                <div class="card my-2">
+            <!-- Estrutura para modelo de cards (será clonada e preenchida dinamicamente) -->
+            <div class="col-md-4 my-2 card-template" style="display: none;">
+                <div class="card">
                     <div class="card-body">
-                        <input type="text" class="form-control note-input text-center font-weight-bold" placeholder="Ex: Titulo" style="width: 100%; border: none">
+                        <input type="text" class="form-control note-input text-center font-weight-bold" placeholder="Ex: Título" style="width: 100%; border: none">
                         <button class="btn btn-success btn-add-inputs">
                             <i class="fas fa-plus"></i>
                         </button>
@@ -30,12 +31,19 @@
                         <div class="note-inputs">
                             <input type="text" class="form-control note-input" placeholder="Anotação 1">
                         </div>
+                        <div class="text-right mt-2">
+                            <button class="btn btn-danger btn-remove-card">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
+
 
 <script src="/js/GeneraterCard.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

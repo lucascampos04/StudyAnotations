@@ -33,13 +33,20 @@ function createNewCard(title = `Título do Card ${cardCount}`, notes = []) {
             <br>
             <br>
             <div class="note-inputs">
-                <input type="text" class="form-control note-input" placeholder="Anotação 1" value="${notes[0] || ''}">
+                <input type="text" class="form-control note-input mb-2" placeholder="Anotação 1" value="${notes[0] || ''}">
+            </div>
+            <span>
+                <div class="text-right mt-2">
+                <button class="btn btn-primary">Salvar
+                    <i class="bi bi-check-circle text-success"></i>
+                </button>
             </div>
             <div class="text-right mt-2">
                 <button class="btn btn-danger btn-remove-card">
                     <i class="fas fa-trash"></i>
                 </button>
             </div>
+            </span>
         </div>
     `;
 
